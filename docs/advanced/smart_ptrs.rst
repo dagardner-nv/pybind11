@@ -22,7 +22,7 @@ by pybind11.
 
 .. code-block:: cpp
 
-    void do_something_with_example(std::unique_ptr<Example> ex) { ... }
+    void do_something_with_example(std::unique_ptr<Example>&& ex) { ... }
 
 The above signature would imply that Python needs to give up ownership of an
 object that is passed to this function, which is generally not possible (for
